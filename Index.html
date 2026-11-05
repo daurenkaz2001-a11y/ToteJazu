@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ахмет Байтұрсынұлының төте жазуын қазіргі қазақ кириллицасына аудару құралы.">
+    <title>ToteJazu - Қазақ жазуы аудармашысы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Tote<span>Jazu</span></div>
+    <div class="header-text">Қазақ жазуы мұрасы</div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Төте жазуды аудару</h1>
+        <p>Ахмет Байтұрсынұлы әліпбиінен қазіргі қазақ жазуына</p>
+    </section>
+
+    <section class="translator">
+
+        <div class="mode">
+            <button class="mode-btn active" id="forward">
+                Төте → Кирилл
+            </button>
+            <button class="mode-btn" id="reverse">
+                Кирилл → Төте
+            </button>
+        </div>
+
+        <label for="sourceText">Бастапқы мәтін</label>
+
+        <textarea
+            id="sourceText"
+            placeholder="Мәтінді осында енгізіңіз..."
+        ></textarea>
+
+        <label class="poem-label">
+            <input type="checkbox" id="poemMode">
+            Өлең режимі
+        </label>
+
+        <button id="translateBtn" class="translate-btn">
+            АУДАРУ
+        </button>
+
+        <div class="result-header">
+            <label>Аударма нәтижесі</label>
+            <span id="resultStatus">Нәтиже осында шығады</span>
+        </div>
+
+        <div id="resultText" class="result">
+            Аударылған мәтін осында шығады...
+        </div>
+
+        <div class="actions">
+            <button id="copyBtn">Көшіру</button>
+            <button id="downloadBtn">TXT жүктеу</button>
+        </div>
+
+    </section>
+
+    <section class="features">
+        <h2>Мүмкіндіктер</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span>📜</span>
+                <h3>Төте жазу</h3>
+                <p>Ескі қазақ жазуын тану</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🔄</span>
+                <h3>Кері аудару</h3>
+                <p>Кириллицадан төте жазуға</p>
+            </div>
+
+            <div class="feature-card">
+                <span>📝</span>
+                <h3>Өлең режимі</h3>
+                <p>Шумақтарды сақтау</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ToteJazu. Қазақ жазуының мұрасы.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
